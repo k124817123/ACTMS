@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+<!--    <ImageView-->
+<!--        android:id="@+id/connect"-->
+<!--        android:layout_width="@dimen/dp_20"-->
+<!--        android:layout_height="@dimen/dp_20"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:src="@drawable/cloudaccess"/>-->
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        android:src="@drawable/d"/>
+    <TextView
+        android:id="@+id/typetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Type"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toTopOf="@+id/actv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/aced"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+    <Spinner
+        android:id="@+id/sptype"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/typetv"
+        app:layout_constraintLeft_toRightOf="@+id/typetv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/typetv"
+        android:background="@drawable/spinnerback"/>
+    <TextView
+        android:id="@+id/actv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Account"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toTopOf="@+id/pwtv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/aced"
+        app:layout_constraintTop_toBottomOf="@+id/typetv" />
+    <EditText
+        android:id="@+id/aced"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textSize="@dimen/sp_22"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/actv"
+        app:layout_constraintLeft_toRightOf="@+id/actv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/actv"/>
+
+    <TextView
+        android:id="@+id/pwtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Password"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/pwed"
+        app:layout_constraintTop_toBottomOf="@+id/actv" />
+    <EditText
+        android:id="@+id/pwed"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_22"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/pwtv"
+        app:layout_constraintLeft_toLeftOf="@+id/aced"
+        app:layout_constraintRight_toRightOf="@+id/aced"
+        app:layout_constraintTop_toTopOf="@+id/pwtv" />
+    <CheckBox
+        android:id="@+id/pwck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pwed"
+        app:layout_constraintLeft_toLeftOf="@+id/pwed"
+        android:buttonTint="@color/checkboxcolor"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_15"
+        android:text="顯示密碼"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+    <ImageButton
+        android:id="@+id/loginim"
+        android:layout_width="@dimen/dp_48"
+        android:layout_height="@dimen/dp_48"
+        android:background="@drawable/login"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/dp_50"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+    <TextView
+        android:id="@+id/versiontv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_15"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

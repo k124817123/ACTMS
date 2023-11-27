@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConstraintLayout"
+    android:background="#000000">
+    <!--    <ImageView-->
+    <!--        android:id="@+id/connect"-->
+    <!--        android:layout_width="@dimen/dp_20"-->
+    <!--        android:layout_height="@dimen/dp_20"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        android:src="@drawable/cloudaccess"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Remote"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_30"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dp_50" />
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/guideline2"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/guideline3"-->
+    <!--        android:scrollbars="vertical"-->
+
+    <!--        >-->
+    <RelativeLayout
+        android:id="@+id/monitorrl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/guideline2"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        >
+
+        <TextView
+            android:id="@+id/tvdevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device:"
+            android:layout_marginTop="@dimen/dp_15"
+
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FFFFFF"/>
+        <Spinner
+            android:id="@+id/spdevice"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvdevice"
+
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:background="@drawable/spinnerback"/>
+
+        <TextView
+            android:id="@+id/tvfunction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Function:"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_below="@id/tvdevice"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FFFFFF"/>
+        <Spinner
+            android:id="@+id/spfunction"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvfunction"
+
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_alignTop="@id/tvfunction"
+
+            android:background="@drawable/spinnerback"/>
+        <TextView
+            android:id="@+id/tvtpname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TP:"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_below="@id/tvfunction"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:id="@+id/edtpname"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_30"
+            android:layout_toRightOf="@id/tvtpname"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:textSize="@dimen/sp_20"
+            android:layout_alignTop="@id/tvtpname"
+            android:layout_below="@id/spfunction"/>
+        <Button
+            android:id="@+id/btsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvtpname"
+            android:layout_marginTop="@dimen/dp_15"
+            android:text="Send"/>
+    </RelativeLayout>
+    <!--    </ScrollView>-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dp_60"
+        />
+    <View
+        android:id="@+id/v2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF" />
+    <TextView
+        android:id="@+id/monitormessage"
+        android:layout_marginTop="@dimen/dp_2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:maxLines="2"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

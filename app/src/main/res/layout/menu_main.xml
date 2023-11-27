@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".monitoractivity"
+    android:background="#000000"
+    android:id="@+id/menucl">
+<!--    <ImageView-->
+<!--        android:id="@+id/connect"-->
+<!--        android:layout_width="@dimen/dp_20"-->
+<!--        android:layout_height="@dimen/dp_20"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:src="@drawable/cloudaccess"/>-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/monitorim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/monitor"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/searchim"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Monitor"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/monitorim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/monitorim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/monitorim" />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/searchim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/search"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+
+<!--        app:layout_constraintLeft_toRightOf="@+id/monitorim"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/analyzeim"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Search"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/searchim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/searchim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/searchim" />-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/analyzeim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/report"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+
+<!--        app:layout_constraintLeft_toRightOf="@+id/searchim"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Analyze"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/analyzeim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/analyzeim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/analyzeim" />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/identityim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/permission"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/manageim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/monitorim" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Identity"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/identityim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/identityim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/identityim" />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/manageim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/manage"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/remoteim"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/identityim"-->
+
+<!--        app:layout_constraintTop_toBottomOf="@+id/monitorim" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Manage"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/manageim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/manageim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/manageim" />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/remoteim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/remote"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+
+<!--        app:layout_constraintLeft_toRightOf="@+id/manageim"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/monitorim" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Remote"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/remoteim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/remoteim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/remoteim" />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/settingim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/settings"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+
+<!--        app:layout_constraintLeft_toRightOf="@+id/manageim"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/monitorim" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/Settings"-->
+<!--        android:textSize="@dimen/sp_13"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/settingim"-->
+<!--        app:layout_constraintRight_toRightOf="@id/settingim"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/settingim" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/versiontv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="@dimen/sp_15"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--         />-->
+<!--    <ImageButton-->
+<!--        android:id="@+id/logoutim"-->
+<!--        android:layout_width="@dimen/dp_48"-->
+<!--        android:layout_height="@dimen/dp_48"-->
+<!--        android:background="@drawable/logout"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

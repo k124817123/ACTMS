@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <LinearLayout
+
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/backim"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/backarrow"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"/>
+        <TextView
+            android:id="@+id/leveltv"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FFFFFF"/>
+        <Spinner
+            android:id="@+id/levelsp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinnerback"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            />
+
+        <TextView
+            android:id="@+id/nametv"
+            android:text="Name"
+
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:id="@+id/nameed"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"/>
+        <TextView
+            android:id="@+id/descriptiontv"
+            android:text="Description"
+
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:textColor="#FFFFFF"/>
+        <EditText
+            android:id="@+id/descriptioned"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_65"/>
+        <ImageButton
+            android:id="@+id/savebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:background="@drawable/save"
+
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_40"/>
+    </LinearLayout>
+</ScrollView>

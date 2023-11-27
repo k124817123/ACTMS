@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConstraintLayout"
+    android:background="#000000">
+<!--    <ImageView-->
+<!--        android:id="@+id/connect"-->
+<!--        android:layout_width="@dimen/dp_20"-->
+<!--        android:layout_height="@dimen/dp_20"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:src="@drawable/cloudaccess"/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ATSInformation"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guideline2"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_30"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dp_50" />
+
+
+        <RelativeLayout
+            android:id="@+id/monitorrl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="@id/guideline2"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+            >
+            <ProgressBar
+                android:id="@+id/progressBar_Spinner"
+                style="?android:attr/progressBarStyleLargeInverse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/tvnoinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:textSize="@dimen/sp_36"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pccardrcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+        </RelativeLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/dp_90"
+       />
+    <View
+        android:id="@+id/v2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFFFF" />
+    <TextView
+        android:id="@+id/monitormessage"
+        android:layout_marginTop="@dimen/dp_2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:maxLines="5"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_15" />
+<!--    <com.github.clans.fab.FloatingActionMenu-->
+<!--        android:id="@+id/floatingActionMenu"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="@dimen/dp_16"-->
+<!--        android:layout_marginBottom="@dimen/dp_16"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/guideline3"-->
+<!--        app:menu_colorNormal="#8BDFD7"-->
+<!--        app:menu_colorRipple="#8BDFD7"-->
+<!--        app:menu_colorPressed="#8BDFD7"-->
+<!--        app:menu_fab_size="normal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" >-->
+
+<!--        <com.github.clans.fab.FloatingActionButton-->
+<!--            android:id="@+id/btadd"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:fab_size="normal"-->
+<!--            app:fab_colorNormal="#2196F3"-->
+<!--            app:fab_colorPressed="#2196F3"-->
+<!--            app:fab_colorRipple="#2196F3"-->
+<!--            app:fab_label="@string/addpccard"-->
+<!--            android:src="@drawable/plusmath"-->
+<!--            />-->
+<!--&lt;!&ndash;        <com.github.clans.fab.FloatingActionButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/btfilter"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:fab_size="normal"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:fab_colorNormal="#4CAF50"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:fab_colorPressed="#4CAF50"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:fab_colorRipple="#4CAF50"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:fab_label="@string/filter"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/funnel"&ndash;&gt;-->
+<!--&lt;!&ndash;            />&ndash;&gt;-->
+<!--    </com.github.clans.fab.FloatingActionMenu>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

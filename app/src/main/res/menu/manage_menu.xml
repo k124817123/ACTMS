@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/m1"
+        android:title="Country" />
+
+    <item
+        android:id="@+id/m2"
+        android:title="City" />
+    <item
+        android:id="@+id/m3"
+        android:title="Site" />
+
+    <item
+        android:id="@+id/m4"
+        android:title="Zone" />
+    <item
+        android:id="@+id/m5"
+        android:title="Line" />
+
+    <item
+        android:id="@+id/m6"
+        android:title="Station" />
+    <item
+        android:id="@+id/m7"
+        android:title="IPC" />
+
+</menu>

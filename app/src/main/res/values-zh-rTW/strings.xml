@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ACTMS</string>
+    <string name="openDrawer">開啟</string>
+    <string name="closeDrawer">關閉</string>
+    <string name="addpccard">新增</string>
+    <string name="menu">目錄</string>
+    <string name="Monitor">即時監控</string>
+    <string name="Search">資料查詢</string>
+    <string name="filter">篩選</string>
+    <string name="Settings">設定</string>
+    <string name="Report">匯出報表</string>
+    <string name="Select">請選擇</string>
+    <string name="Account">帳號 :</string>
+    <string name="Password">密碼 :</string>
+    <string name="Logout">登出</string>
+    <string name="Remote">遠端控制</string>
+    <string name="TPInformation">TP 資訊</string>
+    <string name="TIInformation">TI 資訊</string>
+    <string name="ATSInformation">ATS 資訊</string>
+    <string name="Back">返回</string>
+    <string name="Analyze">資料分析</string>
+    <string name="Type">帳號類型:</string>
+    <string name="Identity">權限管理</string>
+    <string name="Manage">廠區管理</string>
+    <string name="Create">新增</string>
+    <string name="Export">匯出</string>
+    <string name="User">人員</string>
+    <string name="Role">角色</string>
+</resources>

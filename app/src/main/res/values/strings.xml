@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ACTMS</string>
+    <string-array name="list">
+        <item>123</item>
+        <item>456</item>
+        <item>789</item>
+    </string-array>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+    <string name="addpccard">Add</string>
+    <string name="menu">Menu</string>
+    <string name="Monitor">Monitor</string>
+    <string name="Search">Search</string>
+    <string name="ATSInformation">ATS Information</string>
+    <string name="filter">Filter</string>
+    <string name="TIInformation">TI Information</string>
+    <string name="TPInformation">TP Information</string>
+    <string name="Settings">Settings</string>
+    <string name="Report">Report</string>
+    <string name="Select">Select</string>
+    <string name="Account">Account :</string>
+    <string name="Password">Password :</string>
+    <string name="Logout">Logout</string>
+    <string name="Remote">Remote</string>
+    <string-array name="result">
+        <item>---</item>
+        <item>Pass</item>
+        <item>Fail</item>
+    </string-array>
+    <string-array name="type">
+        <item>actms</item>
+        <item>ad</item>
+    </string-array>
+    <string name="Back">Back</string>
+    <string name="Analyze">Analyze</string>
+    <string name="Type">Type:</string>
+    <string name="Identity">Identity</string>
+    <string name="Manage">Manage</string>
+    <string name="Create">Create</string>
+    <string name="Export">Export</string>
+    <string name="User">User</string>
+    <string name="Role">Role</string>
+    <string-array name="remotecontrol">
+        <item>RUN</item>
+        <item>STOP</item>
+        <item>PAUSE</item>
+        <item>OPENFILE</item>
+    </string-array>
+    <string-array name="systemtype">
+        <item>---</item>
+        <item>win10-x64</item>
+        <item>win11-x64</item>
+        <item>win7-x64</item>
+        <item>win7-x86</item>
+        <item>x64-based PC</item>
+        <item>x86-based PC</item>
+    </string-array>
+
+</resources>
